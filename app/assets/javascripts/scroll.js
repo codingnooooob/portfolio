@@ -133,6 +133,10 @@ $(function(){
     window.open('https://github.com/codingnooooob');
   });
 
+  $('#github_works_1').click(function(){
+    window.open('https://github.com/codingnooooob/portfolio');
+  });
+
   $('#github_works_2').click(function(){
     window.open('https://github.com/codingnooooob/chat-space');
   });
