@@ -1,3 +1,17 @@
+.loading {
+  display: block;
+}
+
+.loading_image {
+  width: 100vw;
+  height: 100vh;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+  z-index: 10000;
+}
+
 @media screen and (min-width: 1350px) {
   .header {
     width: 100vw;
@@ -56,6 +70,10 @@
     width: 100vw;
     height: calc(100vh - 140px);
     margin: 80px 0 0 0;
+    background-image: url(/images/jar-loading.gif);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center center;
 
     &__home {
       width: 100%;
@@ -119,6 +137,7 @@
       height: 100%;
       display: none;
       padding: 100px 150px 0 120px;
+      overflow: auto;
       
       &__left {
         width: 500px;
@@ -150,7 +169,10 @@
 
         &__text {
           overflow: auto;
+          font-size: 13px;
           height: 140px;
+          padding: 15px;
+          border-radius: 10px;
         }
       }
 
@@ -347,6 +369,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: absolute;
+                border-radius: 10px 10px 0 0;
               }
 
               &__mask {
@@ -374,6 +397,7 @@
               height: 90px;
               background: rgba(119, 249, 195, 0.3);
               padding: 10px;
+              border-radius: 0 0 10px 10px;
               font-size: 12px;
               font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
             }
@@ -401,7 +425,7 @@
 
         &__text {
           font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
-          font-size: 15px;
+          font-size: 13px;
         }
 
         .icon_box {
@@ -589,6 +613,10 @@
     width: 100vw;
     height: calc(100vh - 140px);
     margin: 80px 0 0 0;
+    background-image: url(/images/jar-loading.gif);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center center;
 
     &__home {
       width: 100%;
@@ -655,50 +683,6 @@
       overflow: auto;
       position: relative;
 
-      .btn {
-        width: 40px;
-        height: 40px;
-        border-radius: 4px;
-        opacity: 0.6;
-        padding: 5px 0 0 0;
-        background-color: gray;
-        cursor: pointer;
-        position: fixed;
-        right: 14px;
-        z-index: 1000;
-      
-        &__arrow {
-          width: 12px;
-          height: 12px;
-          transform: rotate(45deg);
-        }
-      }
-
-      .btn_1 {
-        margin: 200px 0 0;
-        bottom: 20px;
-
-        .arrow_1 {
-          border-right: solid 5px white;
-          border-bottom: solid 5px white;
-          margin: 10px 14px;
-        }
-      }
-
-      .btn_2 {
-        margin: 0 0 50px;
-        bottom: 24px;
-
-        .arrow_2 {
-          border-left: solid 5px white;
-          border-top: solid 5px white;
-          margin: 14px;
-        }
-      }
-      
-      .btn:hover {
-        opacity: 0.4;
-      }
       &__left {
         width: 500px;
         margin: 0 auto;
@@ -721,7 +705,7 @@
             height: 150px;
             border-radius: 50%;
             margin: 0 0 10px 20px;
-            background-image: url(/images/harahara88.jpg);
+            background-image: url(/images/profile.jpg);
             background-repeat: no-repeat;
             background-size: cover;
           }
@@ -908,6 +892,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: absolute;
+                border-radius: 10px 10px 0 0;
               }
 
               &__mask {
@@ -935,6 +920,7 @@
               height: 90px;
               background: rgba(119, 249, 195, 0.3);
               padding: 10px;
+              border-radius: 0 0 10px 10px;
               font-size: 12px;
               font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
             }
@@ -962,7 +948,11 @@
 
         &__text {
           font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
-          font-size: 15px;
+          overflow: auto;
+          font-size: 13px;
+          height: 140px;
+          padding: 15px;
+          border-radius: 10px;
         }
 
         .icon_box {

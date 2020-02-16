@@ -1,52 +1,57 @@
 $(function(){
+  $(window).on('load', function(){
+    $('.header, .content, .content__home, .content__box, .content__box__right__top__image, .works_text').removeClass('loading');
+    $('.loading_image').fadeOut();	
+  });
+
   $('.header__left').click(function(){
     setTimeout(function(){
-      $('.content__home').fadeIn(300);
-    },310);
-    $('#box_1').fadeOut(300);
-    $('#box_2').fadeOut(300);
-    $('#box_3').fadeOut(300);
-    $('#box_4').fadeOut(300);
+      $('.content__home').fadeIn(700);
+    },720);
+    $('#box_1').fadeOut(700);
+    $('#box_2').fadeOut(700);
+    $('#box_3').fadeOut(700);
+    $('#box_4').fadeOut(700);
   });
 
   $('.menu_1').click(function(){
     setTimeout(function(){
-      $('#box_1').fadeIn(300);
-    },310);
-    $('#box_2').fadeOut(300);
-    $('#box_3').fadeOut(300);
-    $('#box_4').fadeOut(300);
-    $('.content__home').fadeOut(300);
+      $('#box_1').fadeIn(700);
+    },720);
+    $('#box_2').fadeOut(700);
+    $('#box_3').fadeOut(700);
+    $('#box_4').fadeOut(700);
+    $('.content__home').fadeOut(700);
   });
 
   $('.menu_2').click(function(){
     setTimeout(function(){
-      $('#box_2').fadeIn(300);
-    },310);
-    $('#box_1').fadeOut(300);
-    $('#box_3').fadeOut(300);
-    $('#box_4').fadeOut(300);
-    $('.content__home').fadeOut(300);
+      $('#box_2').fadeIn(700);
+    },720);
+    $('#box_1').fadeOut(700);
+    $('#box_3').fadeOut(700);
+    $('#box_4').fadeOut(700);
+    $('.content__home').fadeOut(700);
   });
 
   $('.menu_3').click(function(){
     setTimeout(function(){
-      $('#box_3').fadeIn(300);
-    },310);
-    $('#box_1').fadeOut(300);
-    $('#box_2').fadeOut(300);
-    $('#box_4').fadeOut(300);
-    $('.content__home').fadeOut(300);
+      $('#box_3').fadeIn(700);
+    },720);
+    $('#box_1').fadeOut(700);
+    $('#box_2').fadeOut(700);
+    $('#box_4').fadeOut(700);
+    $('.content__home').fadeOut(700);
   });
 
   $('.menu_4').click(function(){
     setTimeout(function(){
-      $('#box_4').fadeIn(300);
-    },310);
-    $('#box_1').fadeOut(300);
-    $('#box_2').fadeOut(300);
-    $('#box_3').fadeOut(300);
-    $('.content__home').fadeOut(300);
+      $('#box_4').fadeIn(700);
+    },720);
+    $('#box_1').fadeOut(700);
+    $('#box_2').fadeOut(700);
+    $('#box_3').fadeOut(700);
+    $('.content__home').fadeOut(700);
   });
 
   $('#title_1').click(function(){
@@ -151,13 +156,5 @@ $(function(){
 
   $('#link_3').click(function(){
     window.open('http://18.176.104.76/');
-  });
-  
-  $('.btn_1').click(function(){
-    $('.content__box').animate({scrollTop:$('.footer').offset().top});
-  });
-
-  $('.btn_2').click(function(){
-    $('.content__box').animate({scrollTop:0});
   });
 });

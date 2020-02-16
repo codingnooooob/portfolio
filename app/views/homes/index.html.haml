@@ -1,4 +1,5 @@
-.header
+.loading_image
+.header.loading
   .header__left
     portfolio
   .header__right
@@ -10,8 +11,8 @@
       Works
     .header__right__menu.menu_4
       Contact
-.content
-  .content__home#content_home
+.content.loading
+  .content__home.loading#content_home
     .content__home__title
       portfolio
     .content__home__menu
@@ -29,7 +30,7 @@
         &#47;
       .content__home__menu__item.menu_4
         Contact
-  .content__box#box_1
+  .content__box.loading#box_1
     .content__box__left
       .content__home__title#black
         Profile
@@ -50,7 +51,7 @@
           Contact
     .content__box__right
       .content__box__right__top
-        .content__box__right__top__image
+        .content__box__right__top__image.loading
         .content__box__right__top__profile
           名前：中島 大介
           %br
@@ -65,7 +66,7 @@
         前職ではスマートスピーカーに関するテストをやっておりました。テストをする中でプログラミングに興味が湧き、全くの未経験から学習を始めて今に至ります。
         %br
         学習した内容は、webアプリ制作のデーターベース設計からデプロイまでの一通りの内容です。重点的にマークアップを学習しました。
-  .content__box#box_2
+  .content__box.loading#box_2
     .content__box__left
       .content__home__title
         Skill
@@ -142,7 +143,11 @@
         .skill_text__bottom
           .skill_text__bottom__left
             ● AWS
+            %br
+            ● Heroku
           .skill_text__bottom__right
+            ★☆☆☆☆
+            %br
             ★☆☆☆☆
       .skill_text.skill_box_none#skill_text_5
         .skill_text__top
@@ -156,7 +161,7 @@
             ★★☆☆☆
             %br
             ★★★☆☆
-  .content__box#box_3
+  .content__box.loading#box_3
     .content__box__left
       .content__home__title#black
         Works
@@ -187,7 +192,7 @@
           &#47;
         .works_title#title_8
           フリマアプリ
-      .works_text#works_text_1
+      .works_text.loading#works_text_1
         .works_text__top
           ポートフォリオサイト
         .works_text__box
@@ -198,9 +203,9 @@
             %span{fontFamily: "'Alegreya Sans SC', sans-serif;", fontSize: "15px"} HTML(haml)&ensp;/&ensp;CSS(sass)&ensp;/&ensp;Ruby&ensp;/&ensp;Ruby on Rails&ensp;/&ensp;javascript(jQuery)
             %br
             %br
-            本ポートフォリオサイトです。
+            本ポートフォリオサイトです。(制作期間：4日)
           = icon('fab', 'github', class: "works_text__github", id: "github_works_1")
-      .works_text#works_text_2
+      .works_text.loading#works_text_2
         .works_text__top
           チャットツール
         .works_text__box
@@ -213,9 +218,9 @@
             %br
             プログラミングスクールの課題で作成しました。
             %br
-            データベース設計からデプロイまで一通り行ました。
+            データベース設計からデプロイまで一通り行ました。(制作期間：10日)
           = icon('fab', 'github', class: "works_text__github", id: "github_works_2")
-      .works_text#works_text_3
+      .works_text.loading#works_text_3
         .works_text__top
           フリマアプリ
         .works_text__box
@@ -228,9 +233,9 @@
             %br
             プログラミングスクールの最終課題にて、自分含む4名で作成しました。
             %br
-            自分は主にフロントエンドを担当しております。
+            自分は主にフロントエンドを担当しております。(制作期間：3週間)
           = icon('fab', 'github', class: "works_text__github", id: "github_works_3")
-  .content__box#box_4
+  .content__box.loading#box_4
     .content__box__left
       .content__home__title
         Contact
