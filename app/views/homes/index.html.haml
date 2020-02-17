@@ -1,5 +1,5 @@
 .loading_image
-.header.loading
+.header
   .header__left
     portfolio
   .header__right
@@ -11,8 +11,8 @@
       Works
     .header__right__menu.menu_4
       Contact
-.content.loading
-  .content__home.loading#content_home
+.content
+  .content__home#content_home
     .content__home__title
       portfolio
     .content__home__menu
@@ -30,7 +30,7 @@
         &#47;
       .content__home__menu__item.menu_4
         Contact
-  .content__box.loading#box_1
+  .content__box#box_1
     .content__box__left
       .content__home__title#black
         Profile
@@ -51,7 +51,7 @@
           Contact
     .content__box__right
       .content__box__right__top
-        .content__box__right__top__image.loading
+        .content__box__right__top__image
         .content__box__right__top__profile
           名前：中島 大介
           %br
@@ -63,10 +63,10 @@
       .content__box__right__text
         はじめまして。中島大介と申します。
         %br
-        前職ではスマートスピーカーに関するテストをやっておりました。テストをする中でプログラミングに興味が湧き、全くの未経験から学習を始めて今に至ります。
+        前職ではスマートスピーカーに関するテストをやっておりました。テストをする中でプログラミングに興味が湧き、プログラミングスクール(TECH::EXPERT)で学習を始めて今に至ります。
         %br
         学習した内容は、webアプリ制作のデーターベース設計からデプロイまでの一通りの内容です。重点的にマークアップを学習しました。
-  .content__box.loading#box_2
+  .content__box#box_2
     .content__box__left
       .content__home__title
         Skill
@@ -121,6 +121,8 @@
             ★★★☆☆
             %br
             ★★☆☆☆
+        .skill_text__box
+          HTML、CSSを使った基本的なビューの作成はある程度できるかと思います。javascriptを使った動的なものに関しては勉強中です。
       .skill_text.skill_box_none#skill_text_2
         .skill_text__top
           バックエンド
@@ -128,7 +130,9 @@
           .skill_text__bottom__left
             ● Ruby(Ruby on Rails)
           .skill_text__bottom__right
-            ★★★☆☆
+            ★★☆☆☆
+        .skill_text__box
+          ルーティングやコントローラーの設定など、初歩的なことでしたらある適度できるかと思います。
       .skill_text.skill_box_none#skill_text_3
         .skill_text__top
           データベース
@@ -137,6 +141,8 @@
             ● MySQL
           .skill_text__bottom__right
             ★☆☆☆☆
+        .skill_text__box
+          webアプリを作成する上で、テーブルやカラムの作成など初歩的なことは一通り行ましたが、あまり深く触れられていないため理解が浅いです。勉強中です。
       .skill_text.skill_box_none#skill_text_4
         .skill_text__top
           インフラ・サーバー
@@ -149,6 +155,8 @@
             ★☆☆☆☆
             %br
             ★☆☆☆☆
+        .skill_text__box
+          こちらもまだ勉強中です。本サイトはHerokuにてデプロイしました。
       .skill_text.skill_box_none#skill_text_5
         .skill_text__top
           その他
@@ -161,7 +169,9 @@
             ★★☆☆☆
             %br
             ★★★☆☆
-  .content__box.loading#box_3
+        .skill_text__box
+          どちらとも学習する上で常に使用していたため、基本的な操作はある程度できると思います。
+  .content__box#box_3
     .content__box__left
       .content__home__title#black
         Works
@@ -192,7 +202,7 @@
           &#47;
         .works_title#title_8
           フリマアプリ
-      .works_text.loading#works_text_1
+      .works_text#works_text_1
         .works_text__top
           ポートフォリオサイト
         .works_text__box
@@ -205,7 +215,7 @@
             %br
             本ポートフォリオサイトです。(制作期間：4日)
           = icon('fab', 'github', class: "works_text__github", id: "github_works_1")
-      .works_text.loading#works_text_2
+      .works_text#works_text_2
         .works_text__top
           チャットツール
         .works_text__box
@@ -216,11 +226,11 @@
             %span{fontFamily: "'Alegreya Sans SC', sans-serif;"} HTML(haml)&ensp;/&ensp;CSS(sass)&ensp;/&ensp;Ruby&ensp;/&ensp;Ruby on Rails&ensp;/&ensp;javascript(jQuery)&ensp;/&ensp;MySQL&ensp;/&ensp;AWS
             %br
             %br
-            プログラミングスクールの課題で作成しました。
+            プログラミングスクール(TECH::EXPERT)の課題で作成しました。
             %br
-            データベース設計からデプロイまで一通り行ました。(制作期間：10日)
+            データベース設計からデプロイまで一通り行いました。(制作期間：10日)
           = icon('fab', 'github', class: "works_text__github", id: "github_works_2")
-      .works_text.loading#works_text_3
+      .works_text#works_text_3
         .works_text__top
           フリマアプリ
         .works_text__box
@@ -231,11 +241,11 @@
             %span{fontFamily: "'Alegreya Sans SC', sans-serif;"} HTML(haml)&ensp;/&ensp;CSS(sass)&ensp;/&ensp;Ruby&ensp;/&ensp;Ruby on Rails&ensp;/&ensp;javascript(jQuery)&ensp;/&ensp;MySQL&ensp;/&ensp;AWS
             %br
             %br
-            プログラミングスクールの最終課題にて、自分含む4名で作成しました。
+            プログラミングスクール(TECH::EXPERT)の最終課題にて、自分含む4名で作成しました。
             %br
             自分は主にフロントエンドを担当しております。(制作期間：3週間)
           = icon('fab', 'github', class: "works_text__github", id: "github_works_3")
-  .content__box.loading#box_4
+  .content__box#box_4
     .content__box__left
       .content__home__title
         Contact

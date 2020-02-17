@@ -1,6 +1,5 @@
 $(function(){
   $(window).on('load', function(){
-    $('.header, .content, .content__home, .content__box, .content__box__right__top__image, .works_text').removeClass('loading');
     $('.loading_image').fadeOut();	
   });
 
