@@ -99,9 +99,9 @@ $(function(){
   
   $('#title_6').click(function(){
     $('#title_6').css('opacity', 0.5);
-    $('#title_7,#title_8').css('opacity', 1);
+    $('#title_7,#title_8,#title_9').css('opacity', 1);
     $('#works_text_1').css('display', 'block');
-    $('#works_text_2,#works_text_3').css('display', 'none');
+    $('#works_text_2,#works_text_3,#works_text_4').css('display', 'none');
   });
 
   $('.menu_3').click(function(){
@@ -109,26 +109,33 @@ $(function(){
       $('#title_6').css('opacity', 0.5);
       $('#title_7,#title_8').css('opacity', 1);
       $('#works_text_1').css('display', 'block');
-      $('#works_text_2,#works_text_3').css('display', 'none');
+      $('#works_text_2,#works_text_3,#works_text_4').css('display', 'none');
     };
   });
 
   $('#title_7').click(function(){
     $('#title_7').css('opacity', 0.5);
-    $('#title_6,#title_8').css('opacity', 1);
+    $('#title_6,#title_8,#title_9').css('opacity', 1);
     $('#works_text_2').css('display', 'block');
-    $('#works_text_1,#works_text_3').css('display', 'none');
+    $('#works_text_1,#works_text_3,#works_text_4').css('display', 'none');
   });
 
   $('#title_8').click(function(){
     $('#title_8').css('opacity', 0.5);
-    $('#title_6,#title_7').css('opacity', 1);
+    $('#title_6,#title_7,#title_9').css('opacity', 1);
     $('#works_text_3').css('display', 'block');
-    $('#works_text_1,#works_text_2').css('display', 'none');
+    $('#works_text_1,#works_text_2,#works_text_4').css('display', 'none');
     $('#text_box').scrollTop(0);
     setTimeout(function(){
       $('#text_mask').css('display', 'block');
     },10);
+  });
+
+  $('#title_9').click(function(){
+    $('#title_9').css('opacity', 0.5);
+    $('#title_6,#title_7,#title_8').css('opacity', 1);
+    $('#works_text_4').css('display', 'block');
+    $('#works_text_1,#works_text_2,#works_text_3').css('display', 'none');
   });
 
   $('#mail').hover(
@@ -169,6 +176,10 @@ $(function(){
 
   $('#github_works_3').click(function(){
     window.open('https://github.com/codingnooooob/freemarket_sample_66c');
+  });
+
+  $('#github_works_4').click(function(){
+    window.open('https://github.com/codingnooooob/pet-care');
   });
 
   $('#link_2').click(function(){
